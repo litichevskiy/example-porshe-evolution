@@ -1,0 +1,29 @@
+@media( max-width: 800px ) {
+	.section{
+
+		.containerContent{
+			width: 100%;
+			margin: 0.35em auto 0;
+		}
+	}
+}
+
+@media( max-width: 768px ) {
+	.section{
+    	position: -webkit-sticky;
+    	position: sticky;
+    	top: 0px;
+
+		.containerContent{
+			font-size: 1em;
+		}
+
+		.header{
+			font-size: 1.1em;
+		}
+
+		.description{
+			line-height: 1.1;
+		}
+	}
+}

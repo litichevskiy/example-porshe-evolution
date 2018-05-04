@@ -1,0 +1,17 @@
+@media( max-width: 768px ) {
+	.containerLoading{
+
+		.containerHeader{
+			margin: 1.5em 0 0 0;
+			text-align: center;
+		}
+
+		.containerFooter{
+			bottom: 0.8em;
+		}
+
+		.textWait{
+			margin-bottom: 0.5em;
+		}
+	}
+}

@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const LiveReloadPlugin = require('webpack-livereload-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const NODE_ENV = process.env.NODE_ENV;
 const IS_PRODUCTION = NODE_ENV === "production";
 
@@ -52,6 +52,13 @@ module.exports = {
                     ]
                 })
             },
+            {
+                test: /\.(png|jp(e*)g|svg)$/,
+                exclude: /\/node_modules\//,
+                use: [{
+                    loader: 'url-loader',
+                }]
+            },
 		]
 	},
     devtool: !IS_PRODUCTION ? 'source-map' : 'null',
@@ -63,7 +70,16 @@ module.exports = {
         new webpack.DefinePlugin ({
             'process.env.NODE_ENV': JSON.stringify( NODE_ENV )
         }),
-        new LiveReloadPlugin()
     ],
 	watch: !IS_PRODUCTION,
+};
+
+if( IS_PRODUCTION ) {
+    module.exports.plugins.push(
+        new UglifyJsPlugin({
+            uglifyOptions:{
+                minimize: true
+            }
+        })
+    )
 }

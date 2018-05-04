@@ -1,24 +1,43 @@
 const serverApi = require('./serverApi');
 
 const storage = ( () => {
-	let _data = {};
+	let _data;
 
 	return{
-		initDate() {
+
+		init() {
 			return serverApi.getAppData()
 			.then( ( response ) => {
 				_data = response;
-				return { isInit: true };
+				return _data;
 			})
-			.catch( ( error ) => { console.error( error ) })
+			.catch( ( error ) => { console.error( error ) });
 		},
 
 		getPage( key ) {
-			return _data['pages'][ key ];
+			return new Promise( ( resolve, reject ) => {
+				if( _data ) resolve( _data['pages'][ key ] );
+				else{
+					this.init()
+					.then( ( response ) => {
+						resolve( response['pages'][ key ] );
+					})
+					.catch((error) => reject( error ));
+				}
+			});
 		},
 
 		getNavPanel() {
-			return _data['navPanel'];
+			return new Promise((resolve, reject) => {
+				if( _data ) resolve( _data['navPanel'] );
+				else{
+					this.init()
+					.then( ( response ) => {
+						resolve( response['navPanel'] );
+					})
+					.catch((error) => reject( error ));
+				}
+			});
 		},
 	}
 

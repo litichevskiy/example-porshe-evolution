@@ -5,67 +5,78 @@
 			"header":"Ferdinand Porsche",
 			"shortDescription":"",
 			"description":"The history of Porsche goes back to 1875 - the birth year of Ferdinand Porsche. It is he who laid the foundations for a unique company with strong ideals.",
-			"bg_img":"./src/images/sections/porsche.jpg"
+			"bg_img":"./src/images/sections/porsche.jpg",
+			"color":"white"
 		},
 		"1930s":{
 			"header":"1930s",
 			"shortDescription":"Type 64 Racing Coupé:",
 			"description":"Built for long-distance ‘Berlin–Rom-Wagen’ endurance competition. Considered the forefathers of all later Porsche sports cars.",
-			"bg_img":"./src/images/sections/1930.jpg"
+			"bg_img":"./src/images/sections/1930.jpg",
+			"color":"black"
 		},
 		"1940s":{
 			"header":"1940s",
 			"shortDescription":"356 Speedster:",
 			"description":" Porsche's first production automobile started in Gmünd in Austria, where only 49 of these aluminum Porsches were built.",
-			"bg_img":"./src/images/sections/1940.jpg"
+			"bg_img":"./src/images/sections/1940.jpg",
+			"color":"white"
 		},
 		"1950s":{
 			"header":"1950s",
 			"shortDescription":"356 Carrera Cabriolet:",
 			"description":"Shortly before Porsche celebrated 10th anniversary of 356 model, 356 had developed into one of the world’s most respected sports cars.",
-			"bg_img":"./src/images/sections/1950.jpg"
+			"bg_img":"./src/images/sections/1950.jpg",
+			"color":"black"
 		},
 		"1960s":{
 			"header":"1960s",
 			"shortDescription":"901:",
 			"description":"Successor of Porsche 356. Between 14 September and 16 November 1964, 82 cars were built. Due to Peugeot was renamed to 911.",
-			"bg_img":"./src/images/sections/1960.jpg"
+			"bg_img":"./src/images/sections/1960.jpg",
+			"color":"white"
 		},
 		"1970s":{
 			"header":"1970s",
 			"shortDescription":"911 Turbo:",
 			"description":"At the Paris Auto Show Porsche presents the 911 Turbo – the world’s first production sports car with exhaust turbocharger and pressure regulator.",
-			"bg_img":"./src/images/sections/1970.jpg"
+			"bg_img":"./src/images/sections/1970.jpg",
+			"color":"white"
 		},
 		"1980s":{
 			"header":"1980s",
 			"shortDescription":"911 Carrera Speedster:",
 			"description":"In 1984 the 911 celebrated it's 20th birthday. It had a lower and flatter windscreen and a simpler manual top that folded beneath a fiberglass cover.",
-			"bg_img":"./src/images/sections/1980.jpg"
+			"bg_img":"./src/images/sections/1980.jpg",
+			"color":"black"
 		},
 		"1990s":{
 			"header":"1990s",
 			"shortDescription":"911:",
 			"description":"It’s got classic lines, albeit updated with plastic bumpers, with modern technology such as 4x4 ABS and electronic heating.",
-			"bg_img":"./src/images/sections/1990.jpg"
+			"bg_img":"./src/images/sections/1990.jpg",
+			"color":"white"
 		},
 		"2000s":{
 			"header":"2000s",
 			"shortDescription":"911:",
 			"description":"The sixth generation of the 911 series' the new 911 Turbo with 480PS six-speed manual transmission requires 3.9 seconds from 0 to 100 km/h.",
-			"bg_img":"./src/images/sections/2000.jpg"
+			"bg_img":"./src/images/sections/2000.jpg",
+			"color":"white"
 		},
 		"2010s":{
 			"header":"2010s",
 			"shortDescription":"911 Carrera 4S Coupe:",
 			"description":"The iconic Porsche 911 sports car celebrates its 50th birthday in 2013. Today's 911 still has many stories to tell. Of heroic race victories, iconic deisgn, childhood dreams. And of a timeless idea.",
-			"bg_img":"./src/images/sections/2010.jpg"
+			"bg_img":"./src/images/sections/2010.jpg",
+			"color":"black"
 		},
 		"2020s":{
 			"header":"2020s",
 			"shortDescription":"The 911.",
 			"description":"Tradition Future. Since 1963.",
-			"bg_img":"./src/images/sections/2020.jpg"
+			"bg_img":"./src/images/sections/2020.jpg",
+			"color":"white"
 		}
 	}
 }

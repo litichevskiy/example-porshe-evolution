@@ -1,0 +1,11 @@
+@media (max-device-width: 768px) and (orientation: portrait) {
+	.containerApp{
+
+		.containerRotateIcon{
+			display: -webkit-inline-box;
+			display: -webkit-inline-flex;
+			display: -ms-inline-flexbox;
+			display: inline-flex;
+		}
+	}
+}
